@@ -1,149 +1,188 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>    
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>    
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<title>App test</title>
 </head>
 <body>
-<div class="container">
-	<h1>App test</h1>
-</div>
-<div class="container">
-	<div class="row">
-		<a href="#" data-toggle="modal" data-target="#Modal_food1"><div id="recipe_case1" class="col-md-4 recipe_case"><img src="img/food1.jpg"></div></a>
-		<a href="#"><div id="recipe_case2" class="col-md-4 recipe_case"><img src="img/food2.jpg"></div></a>
+	<div class="container">
+		<h1>App test</h1>
 	</div>
-	<div class="row">
-		<a href="#"><div id="recipe_case3" class="col-md-4 recipe_case"><img src="img/food3.jpg"></div></a>
-		<a href="#"><div id="recipe_case4" class="col-md-4 recipe_case"><img src="img/food4.jpg"></div></a>
-		
+	<div class="container">
+		<div class="row">
+			<a href="#" data-toggle="modal" data-target="#Modal_food1">
+				<div id="recipe_case1" class="col-md-4 recipe_case">
+					<img src="img/food1.jpg">
+				</div>
+			</a>
+
+			<a href="#" data-toggle="modal" data-target="#Modal_food2">
+				<div id="recipe_case1" class="col-md-4 recipe_case">
+					<img src="img/food2.jpg">
+				</div>
+			</a>
+		</div>
+
+		<div class="row">
+			<a href="#" data-toggle="modal" data-target="#Modal_food3">
+				<div id="recipe_case1" class="col-md-4 recipe_case">
+					<img src="img/food3.jpg">
+				</div>
+			</a>
+
+			<a href="#" data-toggle="modal" data-target="#Modal_food4">
+				<div id="recipe_case1" class="col-md-4 recipe_case">
+					<img src="img/food4.jpg">
+				</div>
+			</a>
+		</div>
+
+		<div class="row">
+			<a href="#" data-toggle="modal" data-target="#Modal_food5">
+				<div id="recipe_case1" class="col-md-4 recipe_case">
+					<img src="img/food5.jpg">
+				</div>
+			</a>
+
+			<a href="#" data-toggle="modal" data-target="#Modal_food6">
+				<div id="recipe_case1" class="col-md-4 recipe_case">
+					<img src="img/food6.jpg">
+				</div>
+			</a>
+		</div>
 	</div>
-	<div class="row">
-		<a href="#"><div id="recipe_case5" class="col-md-4 recipe_case"><img src="img/food5.jpg"></div></a>
-		<a href="#"><div id="recipe_case6" class="col-md-4 recipe_case"><img src="img/food6.jpg"></div></a>
+
+	<!--MODALS-->
+
+	<!--MODAL 1-->
+
+	<div id="Modal_food1" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<img class="img_modal" src="img/m_food1.jpg" width="100%">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
 
-<!--MODALS-->
+		<!--MODAL 2-->
 
-<div id="Modal_food1" class="modal fade" role="dialog">
-  <div class="modal-dialog"
+	<div id="Modal_food2" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<img class="img_modal" src="img/m_food2.jpg" width="100%">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <img class="img_modal" src="img/m_food1.jpeg" width="100%">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-</div>
+	<!--MODAL 3-->
 
-<div id="Modal_food2" class="modal fade" role="dialog">
-  <div class="modal-dialog"
+	<div id="Modal_food3" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<img class="img_modal" src="img/m_food3.jpg" width="100%">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <img class="img_modal" src="img/m_food2.jpeg" width="100%">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-</div>
+		<!--MODAL 4-->
 
-<div id="Modal_food3" class="modal fade" role="dialog">
-  <div class="modal-dialog"
+	<div id="Modal_food4" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<img class="img_modal" src="img/m_food4.jpg" width="100%">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <img class="img_modal" src="img/m_food3.jpeg" width="100%">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-</div>
+			<!--MODAL 5-->
 
-<div id="Modal_food4" class="modal fade" role="dialog">
-  <div class="modal-dialog"
+	<div id="Modal_food5" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<img class="img_modal" src="img/m_food5.jpg" width="100%">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <img class="img_modal" src="img/m_food4.jpeg" width="100%">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-</div>
+			<!--MODAL 6-->
 
-<div id="Modal_food5" class="modal fade" role="dialog">
-  <div class="modal-dialog"
+	<div id="Modal_food6" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<img class="img_modal" src="img/m_food6.jpg" width="100%">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <img class="img_modal" src="img/m_food5.jpeg" width="100%">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-</div>
-
-<div id="Modal_food6" class="modal fade" role="dialog">
-  <div class="modal-dialog"
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <img class="img_modal" src="img/m_food6.jpeg" width="100%">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-</div>
-
-<!--[END] MODALS-->
+	<!--[END] MODALS-->
 
 </div>
 </body>
