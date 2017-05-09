@@ -1,9 +1,17 @@
+body {
+
+	margin: 0 auto;
+	width: 100%;
+	overflow-x: hidden;
+}
+
 body.modal-open .container{
     -webkit-filter: blur(5px);
     -moz-filter: blur(5px);
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
     filter: blur(5px);
+
 }
 
 .recipe_case{
@@ -13,6 +21,7 @@ body.modal-open .container{
 .recipe_case img{
 	width: 100%;
 	height: 100%;
+
 }
 
 img:hover {
@@ -22,4 +31,12 @@ img:hover {
 .img_modal{
 	width: 100%;
 	height: 100%;
+}
+
+#m_body_food1 {
+	background-image: url(../img/m_food1.jpg);
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
 }
