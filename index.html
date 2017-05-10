@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
+	<meta charset="utf-8"></meta>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>    
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+	<script src="jquery.min.js"></script>    
+	 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
 	<title>Grain De Sel</title>
 </head>
 <body>
+
 	<div class="container">
-		<h1><img src="img/logo.png" width="80px"> CHOISIS TON PLAT</h1>
+		<h1><img src="img/logo.png" width="80px"> CHOISIS TON PLAT</h1> <a id="lien" href="http://yusufgkl.github.io/GrainDeSel">Retour au site</a>
 	</div>
-	<div class="container col-md-offset-2">
+	<div class="container">
 		<div class="row">
 			<a href="#" data-toggle="modal" data-target="#Modal_food1">
 				<div id="recipe_case1" class="col-md-4 recipe_case">
@@ -60,6 +64,9 @@
 			</a>
 		</div>
 	</div>
+	<div class="footer">
+		<br>
+	</div>
 
 	<!--MODALS-->
 
@@ -70,22 +77,78 @@
 			<!-- Modal content-->
 			<div class="modal-content" id="modal-body1">
 				<div class="modal-body" >
+
 					<div id="controls" class="text-center" > 
+						<img id="gif" src="img/load.gif" class="load" style="visibility: hidden;">
+						<img id="gif" src="img/ok.gif" class="ok" style="visibility: hidden;">
+						<br>
+
+
+
+						<h2 class="msg"></h2>
 						<ul>
-							<li><img src="img/icons/stwatch.png" width="50px">15 minutes</li>
-							<li><img src="img/icons/euro.png" width="50px">10 000 Euros</li>
-							<li><img src="img/icons/pers.png" width="50px">1 pers</li>
+							<li><img src="img/icons/stwatch.png" width="50px"> 15 minutes</li>
+							<li><img src="img/icons/euro.png" width="50px"> 10 000 Euros</li>
+							<li><img src="img/icons/pers.png" width="50px"> 1 pers</li>
 						</ul>
 						<br>
-						<a href="#" class="btn btn-primary btn-xl print_btn">Imprimer</a>
+						<button id="print_btn">Imprimer</button><button rel="popover" data-placement="top" data-popover-content="#myPopover">+ info</button>
+						<div id="myPopover" class="hide">
+						Recette 
+							<ul>
+								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+								<br>
+								<li>bon appetit</li>
+							</ul>
+						</div>
 					</div>
 					<img id="hidden" class="img_modal" src="img/m_food1.jpg" width="100%">
 				</div>
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		$(function(){
+			$('[rel="popover"]').popover({
+				container: 'body',
+				html: true,
+				content: function () {
+            var clone = $($(this).data('popover-content')).clone(true).removeClass('hide');
+            return clone;
+        }
+    }).click(function(e) {
+        e.preventDefault();
+    });
+});
+	</script>
+	<script type="text/javascript">
+		const print = document.querySelectorAll("#print_btn");
+		print[0].addEventListener("click", function(){
+			$('.ok').css('visibility', 'hidden');
+			setTimeout(function() {
+				$('.load').css('visibility', 'visible');
+			}, 0000);
+			
+			setTimeout(function() {
+				$('.load').css('visibility', 'hidden');
+				$('.ok').css('visibility', 'visible');
+			}, 6000);
 
-		<!--MODAL 2-->
+			setTimeout(function(){
+
+				$('#Modal_food1').modal('toggle');
+			},10000);
+			$('.ok').css('visibility', 'hidden');
+		});
+	</script>
+	<!--MODAL 2-->
 
 	<div id="Modal_food2" class="modal fade" role="dialog">
 		<div class="modal-dialog">
@@ -153,5 +216,8 @@
 	<!--[END] MODALS-->
 
 </div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="yourPath/animatedModal.min.js"></script>
 </body>
 </html>

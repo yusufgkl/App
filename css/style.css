@@ -66,11 +66,11 @@ img:hover {
 	z-index: -1;
 }
 
-.print_btn{
-	padding: 5%;
-	text-align: center;
-	color: white;
-	background-color: #9FDDCE;
+#print_btn{
+	  border: none;
+  border-radius: 200px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 ul li{
@@ -91,4 +91,16 @@ ul{
     left: 0;
     width: 100%;
     padding-bottom: 10%;
+}
+
+.load{
+	width: 50%;
+}
+
+.ok {
+	width: 100%;
+}
+
+#lien {
+	float: right;
 }
