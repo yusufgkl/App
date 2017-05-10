@@ -27,7 +27,7 @@ body.modal-open .container{
 }
 
 img:hover {
-	border: solid 1px transparent;
+	border: solid 3px transparent;
 }
 
 .img_modal{
@@ -35,17 +35,9 @@ img:hover {
 	height: 100%;
 }
 
-/*#m_body_food1 {
-	background-image: url(../img/m_food1.jpg);
-	background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 0;
-    padding-top: 66.64%;
-}*/
-
 #modal-body1 {
    background-image: url(../img/m_food1.jpg);
+   z-index: -1;
    background-size: 100%;
 }
 #modal-body2 {
@@ -72,4 +64,31 @@ img:hover {
 #hidden{
 	visibility: hidden;
 	z-index: -1;
+}
+
+.print_btn{
+	padding: 5%;
+	text-align: center;
+	color: white;
+	background-color: #9FDDCE;
+}
+
+ul li{
+	display:block;
+	float: left; 
+ 	text-decoration:none;
+ 	text-align:center;
+ 	padding: 5%;
+}
+
+ul{
+	list-style-type: none;
+}
+
+#controls {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 10%;
 }
