@@ -8,10 +8,8 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="jquery.min.js"></script>    
-	 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
-
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 	<!-- Font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
 	<title>Grain De Sel</title>
@@ -19,19 +17,19 @@
 <body>
 
 	<div class="container">
-		<h1><img src="img/logo.png" width="80px"> CHOISIS TON PLAT</h1> <a id="lien" href="http://yusufgkl.github.io/GrainDeSel">Retour au site</a>
+		<h1><img src="img/logo.png" width="80px"> CHOISIS TON PLAT</h1>
 	</div>
 	<div class="container">
 		<div class="row">
 			<a href="#" data-toggle="modal" data-target="#Modal_food1">
 				<div id="recipe_case1" class="col-md-4 recipe_case">
-					<img src="img/food1.jpg">
+					<img class="c_img" src="img/food1.jpg">
 				</div>
 			</a>
 
 			<a href="#" data-toggle="modal" data-target="#Modal_food2">
 				<div id="recipe_case1" class="col-md-4 recipe_case">
-					<img src="img/food2.jpg">
+					<img class="c_img" src="img/food2.jpg">
 				</div>
 			</a>
 		</div>
@@ -39,13 +37,13 @@
 		<div class="row">
 			<a href="#" data-toggle="modal" data-target="#Modal_food3">
 				<div id="recipe_case1" class="col-md-4 recipe_case">
-					<img src="img/food3.jpg">
+					<img class="c_img" src="img/food3.jpg">
 				</div>
 			</a>
 
 			<a href="#" data-toggle="modal" data-target="#Modal_food4">
 				<div id="recipe_case1" class="col-md-4 recipe_case">
-					<img src="img/food4.jpg">
+					<img class="c_img" src="img/food4.jpg">
 				</div>
 			</a>
 		</div>
@@ -53,13 +51,13 @@
 		<div class="row">
 			<a href="#" data-toggle="modal" data-target="#Modal_food5">
 				<div id="recipe_case1" class="col-md-4 recipe_case">
-					<img src="img/food5.jpg">
+					<img class="c_img" src="img/food5.jpg">
 				</div>
 			</a>
 
 			<a href="#" data-toggle="modal" data-target="#Modal_food6">
 				<div id="recipe_case1" class="col-md-4 recipe_case">
-					<img src="img/food6.jpg">
+					<img class="c_img" src="img/food6.jpg">
 				</div>
 			</a>
 		</div>
@@ -82,9 +80,6 @@
 						<img id="gif" src="img/load.gif" class="load" style="visibility: hidden;">
 						<img id="gif" src="img/ok.gif" class="ok" style="visibility: hidden;">
 						<br>
-
-
-
 						<h2 class="msg"></h2>
 						<ul>
 							<li><img src="img/icons/stwatch.png" width="50px"> 15 minutes</li>
@@ -92,21 +87,9 @@
 							<li><img src="img/icons/pers.png" width="50px"> 1 pers</li>
 						</ul>
 						<br>
-						<button id="print_btn">Imprimer</button><button rel="popover" data-placement="top" data-popover-content="#myPopover">+ info</button>
+						<button class="m_btn">Imprimer</button><button class="m_btn" rel="popover" data-placement="top" data-popover-content="#myPopover">+ info</button>
 						<div id="myPopover" class="hide">
-						Recette 
-							<ul>
-								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-								<br>
-								<li>bon appetit</li>
-							</ul>
+							<img class="pop_img" src="img/pop/p_food1.jpg">
 						</div>
 					</div>
 					<img id="hidden" class="img_modal" src="img/m_food1.jpg" width="100%">
@@ -114,40 +97,7 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript">
-		$(function(){
-			$('[rel="popover"]').popover({
-				container: 'body',
-				html: true,
-				content: function () {
-            var clone = $($(this).data('popover-content')).clone(true).removeClass('hide');
-            return clone;
-        }
-    }).click(function(e) {
-        e.preventDefault();
-    });
-});
-	</script>
-	<script type="text/javascript">
-		const print = document.querySelectorAll("#print_btn");
-		print[0].addEventListener("click", function(){
-			$('.ok').css('visibility', 'hidden');
-			setTimeout(function() {
-				$('.load').css('visibility', 'visible');
-			}, 0000);
-			
-			setTimeout(function() {
-				$('.load').css('visibility', 'hidden');
-				$('.ok').css('visibility', 'visible');
-			}, 6000);
 
-			setTimeout(function(){
-
-				$('#Modal_food1').modal('toggle');
-			},10000);
-			$('.ok').css('visibility', 'hidden');
-		});
-	</script>
 	<!--MODAL 2-->
 
 	<div id="Modal_food2" class="modal fade" role="dialog">
@@ -174,7 +124,7 @@
 		</div>
 	</div>
 
-		<!--MODAL 4-->
+	<!--MODAL 4-->
 
 	<div id="Modal_food4" class="modal fade" role="dialog">
 		<div class="modal-dialog">
@@ -187,7 +137,7 @@
 		</div>
 	</div>
 
-			<!--MODAL 5-->
+	<!--MODAL 5-->
 
 	<div id="Modal_food5" class="modal fade" role="dialog">
 		<div class="modal-dialog">
@@ -200,7 +150,7 @@
 		</div>
 	</div>
 
-			<!--MODAL 6-->
+	<!--MODAL 6-->
 
 	<div id="Modal_food6" class="modal fade" role="dialog">
 		<div class="modal-dialog">
@@ -219,5 +169,46 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="yourPath/animatedModal.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('[rel="popover"]').popover({
+			container: 'body',
+			html: true,
+			content: function () {
+				var clone = $($(this).data('popover-content')).clone(true).removeClass('hide');
+				return clone;
+			}
+		}).click(function(e) {
+			e.preventDefault();
+		});
+	});
+	$('body').on('click', function (e) {
+		$('[rel="popover"]').each(function () {
+			if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('#myPopover').has(e.target).length === 0) {
+				$(this).popover('hide');
+			}
+		});
+	});
+</script>
+<script type="text/javascript">
+	const print = document.querySelectorAll("#print_btn");
+	print[0].addEventListener("click", function(){
+		$('.ok').css('visibility', 'hidden');
+		setTimeout(function() {
+			$('.load').css('visibility', 'visible');
+		}, 0000);
+
+		setTimeout(function() {
+			$('.load').css('visibility', 'hidden');
+			$('.ok').css('visibility', 'visible');
+		}, 6000);
+
+		setTimeout(function(){
+
+			$('#Modal_food1').modal('toggle');
+		},10000);
+		$('.ok').css('visibility', 'hidden');
+	});
+</script>
 </body>
 </html>

@@ -16,9 +16,7 @@ body.modal-open .container{
 
 }
 
-.recipe_case{
-	overflow: hidden;
-}
+.recipe_case{overflow: hidden;}
 
 .recipe_case img{
 	width: 100%;
@@ -26,9 +24,7 @@ body.modal-open .container{
 
 }
 
-img:hover {
-	border: solid 3px transparent;
-}
+ .c_img:hover {border: solid 3px transparent;}
 
 .img_modal{
 	width: 100%;
@@ -66,11 +62,15 @@ img:hover {
 	z-index: -1;
 }
 
-#print_btn{
-	  border: none;
-  border-radius: 200px;
-  font-weight: 700;
-  text-transform: uppercase;
+.m_btn{
+	border: solid 2px black;
+	color: black;
+  	border-radius: 200px;
+  	font-weight: 700;
+  	text-transform: uppercase;
+  	background-color: transparent;
+  	padding: 5px;
+  	margin: 5%;
 }
 
 ul li{
@@ -81,9 +81,7 @@ ul li{
  	padding: 5%;
 }
 
-ul{
-	list-style-type: none;
-}
+ul{list-style-type: none;}
 
 #controls {
 	position: absolute;
@@ -93,14 +91,13 @@ ul{
     padding-bottom: 10%;
 }
 
-.load{
-	width: 50%;
-}
+.load{width: 50%;}
 
-.ok {
+.ok {width: 100%;}
+
+#lien {float: right;}
+
+.pop_img{
 	width: 100%;
-}
-
-#lien {
-	float: right;
+	padding: 0;
 }
