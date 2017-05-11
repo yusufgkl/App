@@ -6103,14 +6103,13 @@ button.close {
   border-bottom-color: #000;
 }
 .popover {
+  position: fixed;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1060;
   display: none;
-  max-width: 276px;
-  padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  max-width: 440px;
   font-size: 14px;
   font-style: normal;
   font-weight: normal;
